@@ -2,20 +2,25 @@
 import HelloWorld from './components/HelloWorld.vue'
 const welcome = 'Welcome to VueJs and learning!'
 
+const data = {
+  message: 'Welcome to VueJs and learning!',
+  
+  task: [1,2,3,4,5,6]
+}
 
 function GetDate(){
-
   const date = new Date();
   return date.toDateString();
-
 }
+
 
 </script>
 
 <template>
    <div>
-        <h1> {{ welcome }} </h1>
+        <h1> {{ data.message }} </h1>
         <h2>Today is {{ GetDate() }}</h2>
+        <h2>You Have {{ data.task.length }} Task today!</h2>
     </div>
 
 </template>
