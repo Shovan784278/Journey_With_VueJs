@@ -1,12 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+import {data} from './data/data.js'
 const welcome = 'Welcome to VueJs and learning!'
-
-const data = {
-  message: 'Welcome to VueJs and learning!',
-  
-  task: [1,2,3,4,5,6]
-}
 
 function GetDate(){
   const date = new Date();
