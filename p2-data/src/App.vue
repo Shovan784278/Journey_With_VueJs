@@ -1,11 +1,21 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+const welcome = 'Welcome to VueJs and learning!'
+
+
+function GetDate(){
+
+  const date = new Date();
+  return date.toDateString();
+
+}
+
 </script>
 
 <template>
    <div>
-        <h1>Welcome to VueJs and learning!</h1>
-        <h2>Today is 07/02/2024</h2>
+        <h1> {{ welcome }} </h1>
+        <h2>Today is {{ GetDate() }}</h2>
     </div>
 
 </template>
